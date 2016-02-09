@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THATS NUMBERWANG!</title>
+</head>
+<body>
+  <h1> Guess a number between 1 and 10. NOW.</h1>
+  <input id="guessBox" type="text"></input>
+  <input id="guessBtn" type="submit"></input>
+
+  <div id="goop">Numbers guessed:&nbsp;</div>
+  <br>
+  <br>
+  <div id="hint">&nbsp;</div>
+
+
+
+<!--javascript follows-->
+  <script>
+function randomNum(min, max)
+{
+  var randNum =Math.floor(Math.random() * ((max-min)+1) +min)
+  //i copied this code from the MDN. I hate the lack of a good inclusive random int generators in JS.
+  return randNum;
+}
+
+var num = randomNum(1,10);
+//document.write(num);
+
+var userguess = 0;
+var guessBox = document.querySelector('#guessBox');
+var guessbtn = document.querySelector('#guessBtn');
+var goop = document.querySelector('#goop');
+var hint =document.querySelector('#hint');
+
+var allguesses="Numbers guessed:";
+
+//here begins the event listener function
+guessBtn.addEventListener("click", function(){
+  userguess = guessBox.value;
+  allguesses = allguesses + userguess + " "
+  goop.textContent = allguesses;
+  if(userguess > num)
+  {
+    hint.textContent = "Your guess is too high";
+  }
+  else if(userguess < num)
+  {
+    hint.textContent = "Your guess is too low";
+  }
+  else
+  {
+    hint.textContent = "YOU GUESSED THE NUMBER!";
+  }
+  //document.write(guessBox.value);
+
+})//end event listener
+
+  </script><!--end script-->
+
+</body>
+</html>
