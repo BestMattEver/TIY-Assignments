@@ -89,7 +89,8 @@ var text =["little", "star", "how", "I", "wonder", "what", "you", "are"];
 console.log(text.unshift("twinkle", "twinkle")); //returns 10, because the array text now includes twinkle twinkle.
 
 // .filter(function)
-//this puts all elements of this array that pass unscathed through another evaluation function you have previously written and have given to .filter into a new array.
+//this puts all elements of this array that pass unscathed with a value of true through another evaluation function
+// you have previously written and have given to .filter into a new array.
 
 
 // .map(function)
