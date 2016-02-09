@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>About Me</h1>
+
+  <ul>
+    <li>Full Name: <span id="fullname"></span></li>
+    <li>Hometown: <span id="hometown"></span></li>
+    <li>Favorite Movie: <span id="movie"></span></li>
+    <li>Favorite Food: <span id="food"></span></li>
+  </ul>
+
+<script>
+<!--javascript goes below-->
+//adds a img element to the html with a picture of me in it.
+document.write('<img src="assets/images/artsyMe.jpg">');
+
+//sets the body to sans serif font
+var body = document.querySelector('body');
+body.style.fontFamily = "sans-serif";
+
+//var fullName = document.getElementById("fullname:"); I dont even have to grab these...?
+fullname.textContent ="Matthew Everhart";
+//var homeTown = document.getElementById("hometown");
+hometown.textContent ="n/a. Much travel. Born in Philidelphia, PA.";
+movie.textContent ="Porco Rosso / American Astronaut / The Fifth Element";
+food.textContent ="Tacos! Burriots!"
+
+var lis = document.getElementsByTagName("li");
+//var count=lis.length;
+for(var k=0;k<lis.length;k++)
+{
+  lis.className + "listitem";
+  lis[k].style.color="red";
+}
+//listitem.style.color ="red";
+</script>
+ </body>
+</html>
