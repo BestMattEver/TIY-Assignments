@@ -20,4 +20,8 @@ var GoodFood = {
 
 console.log(GoodFood.title);
 console.log(GoodFood.servings);
-console.log(GoodFood.ingredients);
+for(var r =0;r<GoodFood.ingredients.length;r++)
+{
+  console.log(GoodFood.ingredients[r]);
+}
+//console.log(GoodFood.ingredients);
