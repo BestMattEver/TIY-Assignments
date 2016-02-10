@@ -14,12 +14,13 @@ console.log("");
 
 var GoodFood = {
   title: "Shredded BBQ Chicken",
-  servings: "10",
+  servings: 10,
   ingredients: ["Chicken Breasts","BBQ Sauce", "Slow Cooker"]
 }
 
 console.log(GoodFood.title);
-console.log(GoodFood.servings);
+console.log("serves:" + GoodFood.servings);
+console.log("ingredients:")
 for(var r =0;r<GoodFood.ingredients.length;r++)
 {
   console.log(GoodFood.ingredients[r]);
