@@ -1,4 +1,4 @@
-function calculateSupply(amtPerDay, age)
+/*function calculateSupply(amtPerDay, age)
 {
   var lifetime = 80.1; //average life expectancy of a human male in 2016
 
@@ -22,4 +22,24 @@ function calculateSupply(amtPerDay, age)
 
 calculateSupply(3, 25);
 calculateSupply(3, 70);
-calculateSupply(20, 4);
+calculateSupply(20, 4);*/
+
+//--------------------------------END SNACK THING ---------------------------------------------------------
+
+var favMovie = {
+  title: "The Fifth Element",
+  duration: "127 minutes",
+  stars: ["Bruce Willis", "Milla Jojovitch", "Chris Rock"]
+}
+
+function printMovie(movie)
+{
+  var stars ="";
+  for(var i=0;i<movie.stars.length;i++)
+  {
+    stars = stars + (movie.stars[i] + ", ");
+  }
+  console.log(movie.title + " lasts " + movie.duration + " and stars: " + stars);
+}
+
+printMovie(favMovie);
