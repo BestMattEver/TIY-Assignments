@@ -1,11 +1,13 @@
 function greaterNum(num1, num2){
-    if(num1 > num2)
+  var firstNum = parseInt(num1);
+  var secondNum = parseInt(num2);
+    if(firstNum > secondNum)
     {
-        console.log(num1 +" is greater than " + num2);
+        console.log(firstNum +" is greater than " + secondNum);
     }
     else
     {
-        console.log(num2 +" is greater than " + num1);
+        console.log(secondNum +" is greater than " + firstNum);
     }
 }
 
