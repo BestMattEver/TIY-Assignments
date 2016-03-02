@@ -37,7 +37,14 @@ function printMovie(movie)
   var stars ="";
   for(var i=0;i<movie.stars.length;i++)
   {
-    stars = stars + (movie.stars[i] + ", ");
+    if(i === movie.stars.length -1)
+    {
+      stars = stars + "and " + movie.stars[i] + ".";
+    }
+    else
+    {
+      stars = stars + (movie.stars[i] + ", ");
+    }
   }
   console.log(movie.title + " lasts " + movie.duration + " and stars: " + stars);
 }

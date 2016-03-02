@@ -19,10 +19,12 @@ var GoodFood = {
 }
 
 console.log(GoodFood.title);
-console.log("serves:" + GoodFood.servings);
-console.log("ingredients:")
+console.log("Serves:" + GoodFood.servings);
+console.log("Ingredients:")
 for(var r =0;r<GoodFood.ingredients.length;r++)
 {
   console.log(GoodFood.ingredients[r]);
 }
 //console.log(GoodFood.ingredients);
+
+//-------Cat Example------------

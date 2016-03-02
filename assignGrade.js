@@ -9,9 +9,7 @@ function assignGrade(num)
     else if((num <=69) &&(num>=60))
     {console.lof("D");}
     else
-    {
-        console.log("you fail.");
-    }
+    {console.log("F. you fail.");}
 }
 
 assignGrade(83);
