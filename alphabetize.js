@@ -7,3 +7,4 @@ function alphabetize(word){
 
 console.log(alphabetize("thequickbrowndogjumpedoverthelazyfox"));
 console.log(alphabetize("Webmaster"));
+console.log(alphabetize("I have a loveley bunch of coconuts!"));
